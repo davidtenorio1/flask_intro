@@ -13,3 +13,7 @@ def dice():
     roll = str(np.random.choice([1,2,3,4,5,6],3))
     roll = roll[1:-1]
     return ('You rolled ' + roll)
+
+@app.route('/oregon_trail')
+def trail():
+    return 'You have died of dysentery!'
